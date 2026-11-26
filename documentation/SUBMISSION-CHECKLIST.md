@@ -29,7 +29,8 @@
 
 - [x] File Add Font issue with upstream repository and specimen: [google/fonts#11520](https://github.com/google/fonts/issues/11520) (created 2026-11-26, open).
 - [x] Post exact official Add Font template checklist as a new reply after bot triage requested it (2026-11-26; verified posted).
-- [ ] Await re-triage/removal of `X Form not completed` label; label was still present immediately after posting the corrected template.
+- [x] Replace the original google/fonts#11520 issue description with Google's exact original Add Font template wording (author-confirmed and independently verified, 2026-11-26).
+- [ ] Await review/removal of `X Form not completed` label; the label remains despite the corrected main issue description.
 - [ ] Respond to design and engineering feedback and assist with packaging/pull request if accepted.
 - [ ] Obtain Google Fonts acceptance and publication (curated and not guaranteed).
 
