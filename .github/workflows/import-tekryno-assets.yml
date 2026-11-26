@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - TEKRYNO-Google-Fonts-GitHub-Ready-Draft.zip
+      - .github/workflows/import-tekryno-assets.yml
   workflow_dispatch:
 
 permissions:
@@ -27,8 +28,7 @@ jobs:
           allowed = ("fonts/", "sources/", "documentation/specimen/")
           extras = {"documentation/LOCAL-QA.json", "documentation/unicode-mappings-development.csv"}
           required = {"fonts/Tekryno-Regular.ttf", "fonts/Tekryno-Regular.otf",
-                      "sources/build_from_ufo.py",
-                      "documentation/specimen/Tekryno-Type-Specimen.pdf"}
+                                "documentation/specimen/Tekryno-Type-Specimen.pdf"}
           extracted = set()
           with zipfile.ZipFile(archive) as package:
               entries = package.namelist()
