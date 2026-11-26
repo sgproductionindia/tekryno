@@ -26,4 +26,4 @@ The initial automatic ZIP extraction failed because the importer incorrectly tre
 3. Check font-name availability. The original designer reported submitting the Google CLA on 2026-11-26 (not independently verified).
 4. Submit through Google's new-font intake and undergo independent review.
 
-**Google Fonts submission status: NOT SUBMITTED. Google Fonts acceptance: NOT GRANTED.**
+**Google Fonts submission status: SUBMITTED 2026-11-26, issue [google/fonts#11520](https://github.com/google/fonts/issues/11520) OPEN. Google Fonts acceptance: NOT GRANTED.**
