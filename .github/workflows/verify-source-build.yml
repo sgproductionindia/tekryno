@@ -1,0 +1,67 @@
+name: Tekryno — deterministic source rebuild
+
+on:
+  push:
+    paths:
+      - sources/**
+      - requirements.txt
+      - .github/workflows/verify-source-build.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned source-build dependency
+        run: python3 -m pip install -r requirements.txt
+      - name: Build font from editable UFO and verify original release
+        run: |
+          bash sources/build.sh
+          python3 - <<'PY'
+          from pathlib import Path
+          from fontTools.ttLib import TTFont
+          import fontTools, hashlib
+          release=Path('fonts/ttf/Tekryno-Regular.ttf')
+          built=Path('build/Tekryno-Regular.ttf')
+          reference=release.read_bytes()
+          compiled=built.read_bytes()
+          print('fontTools version:',fontTools.__version__)
+          print('Approved release SHA256:',hashlib.sha256(reference).hexdigest())
+          print('UFO source build SHA256:',hashlib.sha256(compiled).hexdigest())
+          assert reference==compiled, 'UFO source rebuild does not byte-for-byte match approved release font'
+          face=TTFont(built)
+          assert len(face.getGlyphOrder())==218
+          assert len(face.getBestCmap())==327
+          assert face['OS/2'].fsType==0, 'OFL must permit installable font embedding'
+          assert face['name'].getDebugName(1)=='Tekryno'
+          assert face['name'].getDebugName(6)=='Tekryno-Regular'
+          print('PASS: exact TTF build, glyph count, cmap, installable embedding, family names.')
+          report=f"""# TEKRYNO source reproducibility — verified
+
+          **Result: PASS.** The checked-in editable UFO and OpenType feature source rebuild the approved TrueType binary **byte-for-byte** with pinned `fonttools=={fontTools.__version__}`.
+
+          - Release: `fonts/ttf/Tekryno-Regular.ttf`
+          - Build command: `bash sources/build.sh`
+          - Built output: `build/Tekryno-Regular.ttf`
+          - SHA-256 (both): `{hashlib.sha256(compiled).hexdigest()}`
+          - Glyph count: 218; Unicode mappings: 327
+          - `OS/2.fsType`: 0 (installable embedding)
+          - Unchanged design: all glyph outlines, widths, kerning and mark positioning match the approved font.
+
+          This verifies TrueType source reproduction, not Google Fonts design acceptance, name clearance or completeness of manual warning reviews.
+          """
+          Path('documentation/SOURCE-REPRODUCIBILITY.md').write_text('\n'.join(x.strip() for x in report.splitlines())+'\n')
+          PY
+      - name: Publish source-reproducibility report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add documentation/SOURCE-REPRODUCIBILITY.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Record independently verified byte-for-byte Tekryno UFO rebuild"
+            git push
+          fi
