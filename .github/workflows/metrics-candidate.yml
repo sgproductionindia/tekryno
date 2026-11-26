@@ -1,0 +1,43 @@
+name: Tekryno 1.004 vertical-metrics candidate QA
+
+on:
+  push:
+    paths:
+      - scripts/prepare-metrics-candidate.py
+      - .github/workflows/metrics-candidate.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  metrics-candidate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install deterministic compiler
+        run: python3 -m pip install -r requirements.txt
+      - name: Generate and prove unchanged glyph metrics and shaping
+        run: python3 scripts/prepare-metrics-candidate.py
+      - name: Install official Fontspector
+        uses: fonttools/setup-fontspector@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Google Fonts technical QA of the candidate
+        shell: bash
+        run: |
+          mkdir -p "$RUNNER_TEMP/tekryno"
+          cp candidate/ttf/Tekryno-Regular.ttf "$RUNNER_TEMP/tekryno/Tekryno-Regular.ttf"
+          set +e
+          fontspector -p googlefonts -l warn --ghmarkdown candidate/QA-FONTSPECTOR.md "$RUNNER_TEMP/tekryno/Tekryno-Regular.ttf" > candidate/QA-FONTSPECTOR-LOG.txt 2>&1
+          result=$?
+          set -e
+          echo "Fontspector exit code: $result"
+          exit "$result"
+      - name: Save candidate binaries and QA for design review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tekryno-1_004-metrics-CANDIDATE-NOT-RELEASED
+          path: candidate/
+          retention-days: 30
