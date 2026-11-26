@@ -27,4 +27,4 @@ The initial automatic ZIP extraction failed because the importer incorrectly tre
 3. Further trademark/name clearance if needed; Fontdata reported no exact Tekryno match.
 4. Await independent review and possible onboarding; the user reports submitting the Google CLA on 2026-11-26 (not independently verified).
 
-**Google Fonts submission status: SUBMITTED 2026-11-26, issue [google/fonts#11520](https://github.com/google/fonts/issues/11520) OPEN. Google Fonts acceptance: NOT GRANTED.**
+**Google Fonts submission status:** Issue [google/fonts#11520](https://github.com/google/fonts/issues/11520) is open. On 2026-11-26, Google's bot flagged the original customized form (`X Form not completed`); the author has now posted the exact official checklist in a new comment as requested. Re-triage is pending; the label had not yet changed when checked. **Google Fonts acceptance: NOT GRANTED.**
