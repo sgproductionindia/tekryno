@@ -1,0 +1,2 @@
+# Editable UFO -> TrueType development build
+fonttools>=4.55,<5
