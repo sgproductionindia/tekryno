@@ -1,0 +1,12 @@
+# GFTools upstream config (alternate build preparation).
+# The canonical, byte-identical release build is `make build` / `make verify`.
+# Do not overwrite the approved release binary from an unverified alternate builder.
+sources:
+  - Tekryno-Regular.ufo
+familyName: "Tekryno"
+outputDir: ../build/gftools
+buildVariable: false
+buildStatic: true
+buildTTF: true
+buildOTF: false
+includeSourceFixes: false
