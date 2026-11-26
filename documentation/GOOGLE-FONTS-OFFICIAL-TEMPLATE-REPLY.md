@@ -22,6 +22,3 @@ By opening this issue, I confirm the project meets the following requirements:
 
 **Image:**
 ![Tekryno font specimen](https://raw.githubusercontent.com/sgproductionindia/tekryno/main/documentation/specimen/Tekryno-Overview.jpg)
-
-**Disclosure and outstanding items:**
-The author drew the original glyph artwork in Illustrator. AI-assisted Python font-development, naming, documentation and quality assurance were used in the project. The editable UFO and OpenType features reproduce the released TTF byte-for-byte as verified by GitHub Actions. The repository's template alignment and full contributing-guideline attestation are still pending. The latest Fontspector Google Fonts profile reports 109 PASS, 0 FAIL, 10 WARN.
