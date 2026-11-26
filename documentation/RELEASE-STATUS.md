@@ -18,12 +18,13 @@ The initial automatic ZIP extraction failed because the importer incorrectly tre
 - All **319 of 319** required encoded GF Latin Core codepoints are present.
 - Full report: `documentation/FONTSPECTOR-REPORT.md`.
 - Manual warning review: `documentation/QA-REVIEW.md`.
+- **Source reproducibility PASS**: Independent GitHub Actions verified that editable UFO + feature sources rebuild the release TTF byte-for-byte with pinned fontTools 4.63.0. Evidence: `documentation/SOURCE-REPRODUCIBILITY.md`.
 
-## Remaining for Google Fonts submission
+## Outstanding review and onboarding
 
-1. Reconcile one dotted-circle UFO rebuild outline and compiled GPOS differences.
-2. Complete manual warning, diacritics and readability proofing.
-3. Check font-name availability. The original designer reported submitting the Google CLA on 2026-11-26 (not independently verified).
-4. Submit through Google's new-font intake and undergo independent review.
+1. Review Fontspector warnings, diacritic shapes, and small-size/readability specimens without discarding the original display design.
+2. Respond to Google Fonts team in [proposal #11520](https://github.com/google/fonts/issues/11520) if they request refinements.
+3. Further trademark/name clearance if needed; Fontdata reported no exact Tekryno match.
+4. Await independent review and possible onboarding; the user reports submitting the Google CLA on 2026-11-26 (not independently verified).
 
 **Google Fonts submission status: SUBMITTED 2026-11-26, issue [google/fonts#11520](https://github.com/google/fonts/issues/11520) OPEN. Google Fonts acceptance: NOT GRANTED.**
