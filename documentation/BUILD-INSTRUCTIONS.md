@@ -11,4 +11,6 @@ python3 sources/build_from_ufo.py
 
 A development TTF will be created at `build/Tekryno-Regular.ttf`.
 
-**Important:** Before distribution or Google Fonts submission, compare the built font to the approved release master (glyphs, widths, Unicode mapping, GPOS pair adjustments and mark positioning, and the corrected accents). The current script is a development helper and is not yet certified to reproduce the final release identically. Refer to `documentation/PROVENANCE.md`.
+**Verified:** With the pinned `fonttools==4.63.0` dependency, this source build reproduces `fonts/ttf/Tekryno-Regular.ttf` **byte-for-byte**. The GitHub workflow `.github/workflows/verify-source-build.yml` runs this test independently. See `documentation/SOURCE-REPRODUCIBILITY.md` and `documentation/PROVENANCE.md`.
+
+Do not change the historical source metadata or input glyph coordinates when building the published 1.003 release; changes should be made in a versioned upgrade, with QA rerun before distribution.
