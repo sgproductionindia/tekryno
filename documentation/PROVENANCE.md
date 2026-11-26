@@ -4,6 +4,8 @@ Tekryno was designed as individual Illustrator SVG letterforms. The final editab
 
 The historical SVG build script predates the later repairs, and should be retained for provenance rather than treated as a drop-in reproducible build for the release binaries.
 
-Local verification of the UFO build against the approved TrueType candidate found matching glyph count (218), Unicode mappings (327), advance widths, and all but one compiled TrueType glyph outline (`uni25CC`, dotted circle). GPOS table compiled bytes also differed. These differences must be inspected before the upstream build is described as fully reproducible or submitted as a final Google Fonts release.
+**Resolved 2026-11-26:** The source's `uni25CC` dotted-circle outlines were originally shifted left by 163 units relative to the approved TTF, and two separate mark-attachment lookups differed from the original single lookup. Those source-only discrepancies were repaired. The source builder now also preserves the release font's table metadata and open, installable embedding permission (`OS/2.fsType=0`).
+
+An independent GitHub Actions run proved that the corrected UFO, `features.fea` and pinned fontTools 4.63.0 reproduce `fonts/ttf/Tekryno-Regular.ttf` **byte-for-byte**. SHA-256: `2d642f7844fbc8398caa729801782e2f6c2b9288c47cb3e3b1db8fcec2bffd37`. See [source build report](SOURCE-REPRODUCIBILITY.md). No released glyph outlines were changed.
 
 Both TrueType and CFF OpenType were produced for desktop use. Google Fonts requires the TTF and editable source.
