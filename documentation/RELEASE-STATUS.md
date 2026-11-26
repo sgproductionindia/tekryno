@@ -1,26 +1,29 @@
-# Tekryno publication status
+# Tekryno — publication and Google Fonts status
 
-## Already live in the public GitHub repository
+## Public project assets: COMPLETE
 
-- `OFL.txt` — complete SIL OFL 1.1 with no Reserved Font Name (author-approved).
-- `README.md`, `AUTHORS.txt`, `CONTRIBUTORS.txt`, `CHANGELOG.md`.
-- `sources/build_from_ufo.py` — open-source TrueType build helper.
-- Project checklist, provenance and this status report.
+All of the following are live in https://github.com/sgproductionindia/tekryno:
 
-## Release assets prepared and awaiting upload
-
+- `OFL.txt` (SIL OFL 1.1, no Reserved Font Name), authors and contributors.
 - `fonts/Tekryno-Regular.ttf` and `fonts/Tekryno-Regular.otf`.
-- Editable UFO source (`sources/Tekryno-Regular.ufo`), OpenType features, and original SVG artwork archive.
-- Five-page Tekryno specimen PDF, images and editable SVG pages.
+- `sources/Tekryno-Regular.ufo`, `sources/features.fea`, original Illustrator SVG artwork, and build helper.
+- Specimen PDF plus editable SVGs and preview image in `documentation/specimen/`.
+- Production documentation, GitHub Actions importer, and automated Fontspector QA workflow.
 
-These assets are available in the author-approved **TEKRYNO Google Fonts GitHub Ready Draft** ZIP but are **not** yet committed to this repository. The GitHub connection in this session can publish UTF-8 text files but cannot directly ingest the local binary ZIP, TTF, OTF or image files from the working container.
+The initial automatic ZIP extraction failed because the importer incorrectly treated an already-published build helper as a file it also had to extract. The issue was corrected and the second GitHub Actions run succeeded. The compressed ZIP was removed after the files were published.
 
-## Release QA still required
+## Latest technical QA — 2026-11-26
 
-- Check the fully published and licensed fonts with Fontspector Google Fonts profile.
-- Reconcile one dotted-circle glyph outline and GPOS differences in the editable UFO rebuild.
-- Review Latin Core shaping and subset metadata, as well as specimen and type-design quality.
-- Check the name `Tekryno` against existing fonts and relevant trademark registrations.
-- Complete Google's contributor agreement and submit a new-font proposal for independent review.
+- Fontspector googlefonts profile: **109 PASS, 0 FAIL, 10 WARN, 11 INFO, 83 SKIP**.
+- All **319 of 319** required encoded GF Latin Core codepoints are present.
+- Full report: `documentation/FONTSPECTOR-REPORT.md`.
+- Manual warning review: `documentation/QA-REVIEW.md`.
 
-This is an **open-source release in preparation**, not a claim of Google Fonts acceptance.
+## Remaining for Google Fonts submission
+
+1. Reconcile one dotted-circle UFO rebuild outline and compiled GPOS differences.
+2. Complete manual warning, diacritics and readability proofing.
+3. Check legal font-name availability and author signs Google CLA.
+4. Submit through Google's new-font intake and undergo independent review.
+
+**Google Fonts submission status: NOT SUBMITTED. Google Fonts acceptance: NOT GRANTED.**
