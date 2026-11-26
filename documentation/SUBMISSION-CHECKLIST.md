@@ -27,10 +27,10 @@
 
 ## Official submission
 
-- [ ] File Add Font issue with upstream repository and specimen when readiness tasks are complete.
+- [x] File Add Font issue with upstream repository and specimen: [google/fonts#11520](https://github.com/google/fonts/issues/11520) (created 2026-11-26, open).
 - [ ] Respond to design and engineering feedback and assist with packaging/pull request if accepted.
 - [ ] Obtain Google Fonts acceptance and publication (curated and not guaranteed).
 
 Official requirements: https://googlefonts.github.io/gf-guide/onboarding.html
 
-**Status:** Public source release candidate, not yet submitted to Google Fonts.
+**Status:** Public OFL source release candidate; [Google Fonts proposal #11520](https://github.com/google/fonts/issues/11520) submitted and open. Not yet accepted or published.
