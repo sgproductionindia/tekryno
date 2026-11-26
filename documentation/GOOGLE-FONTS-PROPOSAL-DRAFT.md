@@ -21,7 +21,7 @@ Tekryno is an original geometric display typeface designed by Shrawan Gaikwad. I
 - [x] The editable font sources (UFO and original Illustrator SVGs) are available in the repository.
 - [x] The original author has confirmed ownership/necessary rights to the designs and licensed them under OFL. **AI use disclosure:** The author drew the letterforms in Illustrator. AI-assisted development was used to help with Python font compilation, documentation, naming and QA; the glyph outlines are based on the author's own artwork.
 - [x] The license declares no Reserved Font Names.
-- [ ] The name is unique according to [fontdata namecheck](https://namecheck.fontdata.com/). *(Complete the dedicated name check; initial web searches found no obvious matching typeface, which is not definitive clearance.)*
+- [x] The [Fontdata name checker](https://namecheck.fontdata.com/) returned **no font by the exact name Tekryno** on 26 November 2026 (user-verified screenshot). This is a database lookup, not legal trademark clearance.
 - [x] The menu family name is **Tekryno**, style **Regular**; PostScript name **Tekryno-Regular**.
 - [x] Encoded coverage includes all 319 required GF Latin Core codepoints.
 - [x] The project has the essential Google Fonts upstream structure: separate TTF/OTF directories, editable UFO master, a single-command `sources/build.sh`, README image, authors, OFL, requirements and documentation.
