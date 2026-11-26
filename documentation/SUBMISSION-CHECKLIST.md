@@ -6,7 +6,7 @@
 - [x] Public SIL Open Font License 1.1 (no Reserved Font Names), published as `OFL.txt`.
 - [x] Font copyright and project-author names point at the public GitHub URL.
 - [ ] Complete definitive name and trademark similarity review; basic web lookups are preliminary.
-- [ ] Original designer completes Google Contributor License Agreement.
+- [x] Original designer reported submitting the Google Contributor License Agreement on 2026-11-26 (Google-side processing not independently verified).
 
 ## Source and release
 
