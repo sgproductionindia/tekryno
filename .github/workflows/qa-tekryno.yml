@@ -1,0 +1,44 @@
+name: Tekryno — Google Fonts Fontspector QA
+
+on:
+  push:
+    paths:
+      - fonts/**
+      - .github/workflows/qa-tekryno.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fontspector:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Install official Fontspector
+        uses: fonttools/setup-fontspector@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run Google Fonts profile and capture findings
+        shell: bash
+        run: |
+          set +e
+          fontspector -p googlefonts -l warn --ghmarkdown documentation/FONTSPECTOR-REPORT.md fonts/Tekryno-Regular.ttf > documentation/FONTSPECTOR-LOG.txt 2>&1
+          result=$?
+          set -e
+          if [ ! -s documentation/FONTSPECTOR-REPORT.md ]; then
+            printf '# Fontspector report generation issue\n\nThe report file was not generated. See `FONTSPECTOR-LOG.txt`.\n' > documentation/FONTSPECTOR-REPORT.md
+          fi
+          printf '\n\n---\nQA command exit status: **%s** (0 means no unsuppressed failures).\n' "$result" >> documentation/FONTSPECTOR-REPORT.md
+          printf 'Fontspector exit code: %s\n' "$result"
+      - name: Commit reproducible QA report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add documentation/FONTSPECTOR-REPORT.md documentation/FONTSPECTOR-LOG.txt
+          if ! git diff --cached --quiet; then
+            git commit -m "Record Tekryno Fontspector Google Fonts profile findings"
+            git push
+          fi
