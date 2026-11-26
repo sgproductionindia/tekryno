@@ -1,2 +1,2 @@
-# Editable UFO -> TrueType development build
-fonttools>=4.55,<5
+# Editable UFO -> TrueType development build; pin version for deterministic compilation
+fonttools==4.63.0
