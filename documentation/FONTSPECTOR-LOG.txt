@@ -1,35 +1,35 @@
 Running 207 checks on 1 file in 1 family
-Testing: fonts
+Testing: /home/runner/work/_temp/tekryno
   Section: Metadata Checks
 
 >> googlefonts/metadata/unreachable_subsetting
 [1mWARN[0m: [unreachable-subsetting]: 
-fonts/Tekryno-Regular.ttf: The following 
-codepoints supported by the font are not covered 
-by any subsets defined in the font's metadata 
-file, and will never be served. You can solve this
-by either manually adding additional subset 
-declarations to METADATA.pb, or by editing the 
-glyphset definitions.
+/home/runner/work/_temp/tekryno/Tekryno-Regular.tt
+f: The following codepoints supported by the font 
+are not covered by any subsets defined in the 
+font's metadata file, and will never be served. 
+You can solve this by either manually adding 
+additional subset declarations to METADATA.pb, or 
+by editing the glyphset definitions.
 
 [38;5;240m•[39m U+02D8 BREVE: try adding one of: 
   canadian-aboriginal, yi
-[38;5;240m•[39m U+02D9 DOT ABOVE: try adding one of: yi, 
-  canadian-aboriginal
+[38;5;240m•[39m U+02D9 DOT ABOVE: try adding one of: 
+  canadian-aboriginal, yi
 [38;5;240m•[39m U+02DB OGONEK: try adding one of: 
   canadian-aboriginal, yi
 [38;5;240m•[39m U+0302 COMBINING CIRCUMFLEX ACCENT: try adding 
-  one of: cherokee, coptic, math, tifinagh
+  one of: cherokee, tifinagh, math, coptic
 [38;5;240m•[39m U+0306 COMBINING BREVE: try adding one of: 
   tifinagh, old-permic
 [38;5;240m•[39m U+0307 COMBINING DOT ABOVE: try adding one of: 
-  tifinagh, todhri, duployan, tai-le, syriac, 
-  old-permic, malayalam, math, 
-  canadian-aboriginal, hebrew, coptic
+  old-permic, coptic, tai-le, math, 
+  canadian-aboriginal, duployan, hebrew, 
+  malayalam, syriac, tifinagh, todhri
 [38;5;240m•[39m U+030A COMBINING RING ABOVE: try adding one of: 
   syriac, duployan
 [38;5;240m•[39m U+030B COMBINING DOUBLE ACUTE ACCENT: try adding
-  one of: cherokee, osage
+  one of: osage, cherokee
 [38;5;240m•[39m U+030C COMBINING CARON: try adding one of: 
   tai-le, cherokee
 ... and 6 others
@@ -37,7 +37,7 @@ glyphset definitions.
 Or you can add the above codepoints to one of the 
 subsets supported by the font: latin-ext, latin
 
-Testing: fonts/Tekryno-Regular.ttf
+Testing: /home/runner/work/_temp/tekryno/Tekryno-Regular.ttf
   Section: Outline Checks
 
 >> outline_alignment_miss
@@ -97,18 +97,6 @@ have short segments:
   total outline: 3102.69)
 ... and 13 others
 
-  Section: Font File Checks
-
->> googlefonts/vendor_id
-[1mWARN[0m: [unknown]: OS/2 VendorID value 'SGPR' is not
-yet recognized.
-If you registered it recently, then it's safe to 
-ignore this warning message. Otherwise, you should
-set it to your own unique 4 character code, and 
-register it with Microsoft at 
-https://www.microsoft.com/typography/links/vendorl
-ist.aspx
-
   Section: Universal Profile Checks
 
 >> alt_caron
@@ -157,6 +145,18 @@ contours in each of them. The expected values are
 [38;5;240m•[39m section (U+00A7): found 3, expected one of: [2, 
   4, 6]
 
+  Section: Font File Checks
+
+>> googlefonts/vendor_id
+[1mWARN[0m: [unknown]: OS/2 VendorID value 'SGPR' is not
+yet recognized.
+If you registered it recently, then it's safe to 
+ignore this warning message. Otherwise, you should
+set it to your own unique 4 character code, and 
+register it with Microsoft at 
+https://www.microsoft.com/typography/links/vendorl
+ist.aspx
+
   Section: Glyphset Checks
 
 >> googlefonts/glyphsets/shape_languages
@@ -167,190 +167,6 @@ shaping:
 [38;5;239m│[39m                                           [38;5;239m│[39muage[38;5;239m│[39m
 [38;5;239m│[39m                                           [38;5;239m│[39m s  [38;5;239m│[39m
 [38;5;239m├[39m[38;5;239m───────────────────────────────────────────[39m[38;5;239m┼[39m[38;5;239m────[39m[38;5;239m┤[39m
-[38;5;239m│[39mAuxiliary orthography codepoints:          [38;5;239m│[39m [38;5;240m•[39m c[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   _[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   L[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   t[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   ([38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   C[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   t[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   l[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   )[38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: Ĕ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: Ĭ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: Ŀ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: Ŏ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: Ō                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: Ŭ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: ĕ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: ĭ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: ŀ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: ŏ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: ō                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: ŭ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mAuxiliary orthography codepoints:          [38;5;239m│[39m [38;5;240m•[39m f[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   r[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   _[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   L[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   t[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   ([38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   F[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   r[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   e[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   c[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   h[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   )[38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: Ǔ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: ſ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: ǔ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mAuxiliary orthography codepoints:          [38;5;239m│[39m [38;5;240m•[39m e[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   _[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   L[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   t[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   ([38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   E[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   g[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   l[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   i[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   s[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   h[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   )[38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: Ĕ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: Ĭ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: Ŏ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: Ō                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: Ŭ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: ĕ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: ĭ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: ŏ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: ō                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: ŭ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: ʻ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mAuxiliary orthography codepoints:          [38;5;239m│[39m [38;5;240m•[39m n[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   l[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   _[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   L[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   t[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   ([38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   D[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   u[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   t[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   c[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   h[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   )[38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: Ĳ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: ĳ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mAuxiliary orthography codepoints:          [38;5;239m│[39m [38;5;240m•[39m l[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   t[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   _[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   L[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   t[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   ([38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   L[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   i[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   t[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   h[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   u[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   i[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   )[38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: Ẽ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: Ĩ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: Ũ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: ẽ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: ĩ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: ũ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mAuxiliary orthography codepoints:          [38;5;239m│[39m [38;5;240m•[39m n[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   b[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   _[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   L[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   t[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   ([38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   N[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   o[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   r[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   w[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   e[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   g[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   i[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   B[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   o[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   k[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   m[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   å[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   l[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   )[38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: Ǎ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: Ŋ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: Ŧ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: ǎ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: ŋ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: ŧ                   [38;5;239m│[39m    [38;5;239m│[39m
 [38;5;239m│[39mAuxiliary orthography codepoints:          [38;5;239m│[39m [38;5;240m•[39m c[38;5;239m│[39m
 [38;5;239m│[39m                                           [38;5;239m│[39m   s[38;5;239m│[39m
 [38;5;239m│[39m                                           [38;5;239m│[39m   _[38;5;239m│[39m
@@ -495,17 +311,19 @@ shaping:
 [38;5;239m│[39mmissing from the font: ō                   [38;5;239m│[39m    [38;5;239m│[39m
 [38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
 [38;5;239m│[39mmissing from the font: ŗ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mAuxiliary orthography codepoints:          [38;5;239m│[39m [38;5;240m•[39m r[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   o[38;5;239m│[39m
+[38;5;239m│[39mAuxiliary orthography codepoints:          [38;5;239m│[39m [38;5;240m•[39m l[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   t[38;5;239m│[39m
 [38;5;239m│[39m                                           [38;5;239m│[39m   _[38;5;239m│[39m
 [38;5;239m│[39m                                           [38;5;239m│[39m   L[38;5;239m│[39m
 [38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
 [38;5;239m│[39m                                           [38;5;239m│[39m   t[38;5;239m│[39m
 [38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
 [38;5;239m│[39m                                           [38;5;239m│[39m   ([38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   R[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   o[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   m[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   L[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   i[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   t[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   h[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   u[38;5;239m│[39m
 [38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
 [38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
 [38;5;239m│[39m                                           [38;5;239m│[39m   i[38;5;239m│[39m
@@ -513,9 +331,54 @@ shaping:
 [38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
 [38;5;239m│[39m                                           [38;5;239m│[39m   )[38;5;239m│[39m
 [38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: Ţ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: Ẽ                   [38;5;239m│[39m    [38;5;239m│[39m
 [38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mmissing from the font: ţ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: Ĩ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: Ũ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: ẽ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: ĩ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: ũ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mAuxiliary orthography codepoints:          [38;5;239m│[39m [38;5;240m•[39m d[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   e[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   _[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   L[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   t[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   ([38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   G[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   e[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   r[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   m[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   )[38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: Ĕ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: Ĭ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: Ŏ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: Ō                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: Ŭ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: ĕ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: ĭ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: ŏ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: ō                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: ſ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: ŭ                   [38;5;239m│[39m    [38;5;239m│[39m
 [38;5;239m│[39mAuxiliary orthography codepoints:          [38;5;239m│[39m [38;5;240m•[39m d[38;5;239m│[39m
 [38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
 [38;5;239m│[39m                                           [38;5;239m│[39m   _[38;5;239m│[39m
@@ -591,20 +454,57 @@ shaping:
 [38;5;239m│[39mmissing from the font: ʒ                   [38;5;239m│[39m    [38;5;239m│[39m
 [38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
 [38;5;239m│[39mmissing from the font: ǯ                   [38;5;239m│[39m    [38;5;239m│[39m
-[38;5;239m│[39mAuxiliary orthography codepoints:          [38;5;239m│[39m [38;5;240m•[39m d[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   e[38;5;239m│[39m
+[38;5;239m│[39mAuxiliary orthography codepoints:          [38;5;239m│[39m [38;5;240m•[39m n[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   b[38;5;239m│[39m
 [38;5;239m│[39m                                           [38;5;239m│[39m   _[38;5;239m│[39m
 [38;5;239m│[39m                                           [38;5;239m│[39m   L[38;5;239m│[39m
 [38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
 [38;5;239m│[39m                                           [38;5;239m│[39m   t[38;5;239m│[39m
 [38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
 [38;5;239m│[39m                                           [38;5;239m│[39m   ([38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   G[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   e[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   N[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   o[38;5;239m│[39m
 [38;5;239m│[39m                                           [38;5;239m│[39m   r[38;5;239m│[39m
-[38;5;239m│[39m                                           [38;5;239m│[39m   m[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   w[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   e[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   g[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   i[38;5;239m│[39m
 [38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
 [38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   B[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   o[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   k[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   m[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   å[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   l[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   )[38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: Ǎ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: Ŋ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: Ŧ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: ǎ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: ŋ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: ŧ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mAuxiliary orthography codepoints:          [38;5;239m│[39m [38;5;240m•[39m e[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   _[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   L[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   t[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   ([38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   E[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   g[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   l[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   i[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   s[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   h[38;5;239m│[39m
 [38;5;239m│[39m                                           [38;5;239m│[39m   )[38;5;239m│[39m
 [38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
 [38;5;239m│[39mmissing from the font: Ĕ                   [38;5;239m│[39m    [38;5;239m│[39m
@@ -625,19 +525,112 @@ shaping:
 [38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
 [38;5;239m│[39mmissing from the font: ō                   [38;5;239m│[39m    [38;5;239m│[39m
 [38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: ŭ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: ʻ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mAuxiliary orthography codepoints:          [38;5;239m│[39m [38;5;240m•[39m n[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   l[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   _[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   L[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   t[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   ([38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   D[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   u[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   t[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   c[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   h[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   )[38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: Ĳ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: ĳ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mAuxiliary orthography codepoints:          [38;5;239m│[39m [38;5;240m•[39m r[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   o[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   _[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   L[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   t[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   ([38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   R[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   o[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   m[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   i[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   )[38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: Ţ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: ţ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mAuxiliary orthography codepoints:          [38;5;239m│[39m [38;5;240m•[39m f[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   r[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   _[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   L[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   t[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   ([38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   F[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   r[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   e[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   c[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   h[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   )[38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: Ǔ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
 [38;5;239m│[39mmissing from the font: ſ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: ǔ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mAuxiliary orthography codepoints:          [38;5;239m│[39m [38;5;240m•[39m c[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   _[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   L[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   t[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   ([38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   C[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   t[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   l[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   a[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   n[38;5;239m│[39m
+[38;5;239m│[39m                                           [38;5;239m│[39m   )[38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: Ĕ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: Ĭ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: Ŀ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: Ŏ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: Ō                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: Ŭ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: ĕ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: ĭ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: ŀ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: ŏ                   [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
+[38;5;239m│[39mmissing from the font: ō                   [38;5;239m│[39m    [38;5;239m│[39m
 [38;5;239m│[39mThe following auxiliary characters are     [38;5;239m│[39m    [38;5;239m│[39m
 [38;5;239m│[39mmissing from the font: ŭ                   [38;5;239m│[39m    [38;5;239m│[39m
 
-  Section: Repository Checks
-
->> googlefonts/repo/dirname_matches_nameid_1
-[1mFAIL[0m: [mismatch]: Family name on the name table 
-('Tekryno') does not match directory name in the 
-repo structure ('fonts'). Expected 'tekryno'.
-
 Markdown report written to documentation/FONTSPECTOR-REPORT.md
-Ran 207 checks in 1.017s
+Ran 207 checks in 1.205s
 
 Summary:
-  SKIP: 83 INFO: 11 PASS: 108 WARN: 10 FAIL: 1 FATAL: 0 ERROR: 0 
+  SKIP: 83 INFO: 11 PASS: 109 WARN: 10 FAIL: 0 FATAL: 0 ERROR: 0 
