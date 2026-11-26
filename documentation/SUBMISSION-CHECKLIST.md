@@ -2,32 +2,34 @@
 
 ## Author approval and licensing
 
-- [ ] Confirm ownership and permission to publish all font outlines, sources and assets.
-- [ ] Author approves publishing Tekryno under SIL Open Font License 1.1 (OFL).
-- [ ] Verify final copyright and project-author names and GitHub repository URL.
-- [ ] Review potential conflicts with existing font and trademark names.
+- [x] Author has affirmed ownership/rights and authorized publication of the font, sources, and assets.
+- [x] Public SIL Open Font License 1.1 (no Reserved Font Names), published as `OFL.txt`.
+- [x] Font copyright and project-author names point at the public GitHub URL.
+- [ ] Complete definitive name and trademark similarity review; basic web lookups are preliminary.
+- [ ] Original designer completes Google Contributor License Agreement.
 
 ## Source and release
 
-- [ ] Upload final canonical `Tekryno-Regular.ttf` and desktop OTF.
-- [ ] Upload editable UFO, original Illustrator SVG outlines and reproducible build instructions.
-- [ ] Confirm a source rebuild reproduces release-quality geometry, metrics, OpenType layout and accents.
-- [ ] Upload specimen and descriptive documentation.
+- [x] Publish canonical `fonts/Tekryno-Regular.ttf` and desktop OTF.
+- [x] Publish editable UFO, original Illustrator SVG artwork and documented build helper.
+- [ ] Reconcile dotted-circle outline and GPOS differences in UFO rebuild.
+- [x] Publish five-page specimen and descriptive documentation.
 
-## Google Fonts quality review
+## Google Fonts technical QA
 
-- [ ] Check canonical file and internal family naming.
-- [ ] Review Google Fonts Latin Core coverage and shaping (not only Unicode mapping).
-- [ ] Run Fontspector Google Fonts profile on the final TTF; resolve FAILs and review WARNs.
-- [ ] Check small-size readability, kerning and mark placement.
-- [ ] Confirm OFL copyright strings match repository metadata.
+- [x] Verify canonical filename and internal family name (`Tekryno`).
+- [x] Check encoded GF Latin Core coverage (**319/319**).
+- [x] Execute current Fontspector Google Fonts profile (**0 FAIL**, 10 WARN).
+- [ ] Complete manual review of all 10 Fontspector WARNs.
+- [ ] Complete small-size/readability, kerning and diacritic composition proofing.
+- [x] Confirm OFL copyright strings and URL in binary font metadata.
 
-## Submission
+## Official submission
 
-- [ ] Use the current Google Fonts Add Font intake procedure after QA.
-- [ ] Complete any contributor agreements or documentation Google requests.
-- [ ] Await independent acceptance and onboarding review.
+- [ ] File Add Font issue with upstream repository and specimen when readiness tasks are complete.
+- [ ] Respond to design and engineering feedback and assist with packaging/pull request if accepted.
+- [ ] Obtain Google Fonts acceptance and publication (curated and not guaranteed).
 
-Guidelines: https://googlefonts.github.io/gf-guide/onboarding.html
+Official requirements: https://googlefonts.github.io/gf-guide/onboarding.html
 
-**Status:** preparation only. This document is not a license or Google Fonts approval.
+**Status:** Public source release candidate, not yet submitted to Google Fonts.
