@@ -2,43 +2,45 @@
 
 **Tekryno** is an original geometric, angular, futuristic display typeface designed by **Shrawan Gaikwad**. Its letterforms take inspiration from electronic music and modular shapes. Uppercase and lowercase input intentionally display uppercase-style designs.
 
-**Publication status:** The source repository is public and the author has approved release of the font family under SIL Open Font License 1.1. The final font binaries, editable UFO and specimen are prepared for a one-time import. **Tekryno has not been submitted to or accepted by Google Fonts.**
+**Status:** Public OFL-1.1 release candidate and editable source repository. **Tekryno has not yet been submitted to or accepted by Google Fonts.**
 
 ## Font family
 
-- Family name in menus: **Tekryno**
+- Menu family: **Tekryno**
 - Style: **Regular**
 - OpenType PostScript name: **Tekryno-Regular**
-- Release-candidate glyphs: **218**
-- Unicode mappings: **327**
-- Internal visual branding: **TEKRYNO**
+- Glyphs: **218**; Unicode mappings: **327**
+- Required GF Latin Core codepoints: **319 of 319 present**
+- Specimen branding: **TEKRYNO**
 
-## License
+## Download and sources
 
-**SIL Open Font License, Version 1.1 (OFL-1.1)**, with **no Reserved Font Name**. See [OFL.txt](OFL.txt). Original designer: Shrawan Gaikwad. Copyright 2026 The Tekryno Project Authors (https://github.com/sgproductionindia/tekryno).
+- [TrueType font](fonts/Tekryno-Regular.ttf)
+- [CFF OpenType font](fonts/Tekryno-Regular.otf)
+- [Editable UFO source](sources/Tekryno-Regular.ufo)
+- [Illustrator SVG artwork archive](sources/original-svg-archive/)
+- [OpenType feature source](sources/features.fea)
+- [Build helper](sources/build_from_ufo.py)
+- [Five-page vector specimen](documentation/specimen/Tekryno-Type-Specimen.pdf)
+- [Font license](OFL.txt)
 
-The font can be used commercially, embedded, redistributed, and modified subject to OFL-1.1. The OFL license applies to the entire font family, not just this current Regular style.
+The font is licensed under **SIL Open Font License 1.1, with no Reserved Font Name**. Copyright 2026 The Tekryno Project Authors (https://github.com/sgproductionindia/tekryno). The original designer is Shrawan Gaikwad. The entire family is open source, not just the Regular style.
 
-## Files and sources
+## Google Fonts review
 
-After the approved release ZIP is imported:
+The official Fontspector Google Fonts profile was executed on the TTF in a correctly named `tekryno` directory on 2026-11-26:
 
-- `fonts/Tekryno-Regular.ttf` — TrueType font; candidate for Google Fonts QA
-- `fonts/Tekryno-Regular.otf` — desktop CFF OpenType counterpart
-- `sources/Tekryno-Regular.ufo` — editable UFO source
-- `sources/original-svg-archive/` — original Illustrator SVG artwork archive
-- `sources/features.fea` — OpenType feature source
-- `sources/build_from_ufo.py` — local development builder
-- `documentation/specimen/Tekryno-Type-Specimen.pdf` — five-page type specimen
+**109 PASS, 0 FAIL, 10 WARN, 11 INFO, 83 SKIP.**
 
-**Source caveat:** The latest local UFO build matches the approved TTF's glyph count, Unicode mappings and horizontal metrics. One dotted-circle outline and compiled GPOS data are not yet bit-identical. The original release candidate remains the visual reference until this is resolved.
+- [Full Fontspector report](documentation/FONTSPECTOR-REPORT.md)
+- [Design-aware warning review](documentation/QA-REVIEW.md)
+- [Official Latin Core coverage check](documentation/LATIN-CORE-COVERAGE.md)
+- [Source provenance and rebuild caveat](documentation/PROVENANCE.md)
+- [Current submission checklist](documentation/SUBMISSION-CHECKLIST.md)
+- [Draft proposal for Google Fonts](documentation/GOOGLE-FONTS-PROPOSAL-DRAFT.md)
 
-## Release-asset import
+**Source reproducibility caveat:** The latest UFO development build retains the approved TTF's glyph count, Unicode mappings and metrics, but one dotted-circle outline and compiled GPOS bytes differ. The approved release binary remains the visual reference while these differences are reviewed.
 
-The license and documentation are already published. To import the local binaries and editable sources, upload the prepared `TEKRYNO-Google-Fonts-GitHub-Ready-Draft.zip` file to the repository root on `main`. The [import workflow](.github/workflows/import-tekryno-assets.yml) automatically extracts the approved folders and commits them, preserving the published license and project documentation.
+Google Fonts publication is subject to independent design review, source and engineering validation, and the author's Contributor License Agreement. Technical checks passing does **not** imply acceptance.
 
-Read [release status](documentation/RELEASE-STATUS.md), [build instructions](documentation/BUILD-INSTRUCTIONS.md), and the [Google Fonts checklist](documentation/SUBMISSION-CHECKLIST.md).
-
-## Google Fonts
-
-Tekryno is **not yet approved for Google Fonts**. It still needs final outline, shaping, source-reproducibility, naming, legal-name and Fontspector review, and submission through the official new-font process. See the [Google Fonts onboarding guide](https://googlefonts.github.io/gf-guide/onboarding.html).
+Guide: https://googlefonts.github.io/gf-guide/onboarding.html
