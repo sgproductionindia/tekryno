@@ -48,6 +48,8 @@ jobs:
                       raise SystemExit(f"Unsafe ZIP entry: {full}")
                   if not (rel.startswith(allowed) or rel in extras):
                       continue
+                  if rel == "sources/build_from_ufo.py":
+                      continue  # retain the reviewed GitHub build helper
                   if "/__pycache__/" in rel or rel.endswith(".pyc"):
                       continue
                   target = Path(rel)
