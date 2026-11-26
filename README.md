@@ -2,6 +2,8 @@
 
 **Tekryno** is an original geometric, angular, futuristic display typeface designed by **Shrawan Gaikwad**. Its letterforms take inspiration from electronic music and modular shapes. Uppercase and lowercase input intentionally display uppercase-style designs.
 
+![Tekryno type specimen](documentation/specimen/Tekryno-Overview.jpg)
+
 **Status:** Public OFL-1.1 release candidate and editable source repository. **Tekryno has not yet been submitted to or accepted by Google Fonts.**
 
 ## Font family
@@ -15,8 +17,8 @@
 
 ## Download and sources
 
-- [TrueType font](fonts/Tekryno-Regular.ttf)
-- [CFF OpenType font](fonts/Tekryno-Regular.otf)
+- [TrueType font](fonts/ttf/Tekryno-Regular.ttf)
+- [CFF OpenType font](fonts/otf/Tekryno-Regular.otf)
 - [Editable UFO source](sources/Tekryno-Regular.ufo)
 - [Illustrator SVG artwork archive](sources/original-svg-archive/)
 - [OpenType feature source](sources/features.fea)

@@ -1,6 +1,7 @@
 Tekryno Project Authors
 
 Shrawan Gaikwad — original typeface design, Illustrator SVG glyph artwork, and font development.
+Contact: https://github.com/sgproductionindia
 
 Copyright 2026 The Tekryno Project Authors (https://github.com/sgproductionindia/tekryno)
 

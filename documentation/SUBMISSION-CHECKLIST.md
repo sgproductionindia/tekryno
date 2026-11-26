@@ -10,7 +10,7 @@
 
 ## Source and release
 
-- [x] Publish canonical `fonts/Tekryno-Regular.ttf` and desktop OTF.
+- [x] Publish canonical `fonts/ttf/Tekryno-Regular.ttf` and desktop OTF.
 - [x] Publish editable UFO, original Illustrator SVG artwork and documented build helper.
 - [ ] Reconcile dotted-circle outline and GPOS differences in UFO rebuild.
 - [x] Publish five-page specimen and descriptive documentation.

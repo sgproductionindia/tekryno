@@ -26,7 +26,7 @@ jobs:
         run: |
           set +e
           mkdir -p "$RUNNER_TEMP/tekryno"
-          cp fonts/Tekryno-Regular.ttf "$RUNNER_TEMP/tekryno/Tekryno-Regular.ttf"
+          cp fonts/ttf/Tekryno-Regular.ttf "$RUNNER_TEMP/tekryno/Tekryno-Regular.ttf"
           fontspector -p googlefonts -l warn --ghmarkdown documentation/FONTSPECTOR-REPORT.md "$RUNNER_TEMP/tekryno/Tekryno-Regular.ttf" > documentation/FONTSPECTOR-LOG.txt 2>&1
           result=$?
           set -e

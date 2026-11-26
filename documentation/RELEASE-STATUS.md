@@ -5,7 +5,7 @@
 All of the following are live in https://github.com/sgproductionindia/tekryno:
 
 - `OFL.txt` (SIL OFL 1.1, no Reserved Font Name), authors and contributors.
-- `fonts/Tekryno-Regular.ttf` and `fonts/Tekryno-Regular.otf`.
+- `fonts/ttf/Tekryno-Regular.ttf` and `fonts/otf/Tekryno-Regular.otf`.
 - `sources/Tekryno-Regular.ufo`, `sources/features.fea`, original Illustrator SVG artwork, and build helper.
 - Specimen PDF plus editable SVGs and preview image in `documentation/specimen/`.
 - Production documentation, GitHub Actions importer, and automated Fontspector QA workflow.

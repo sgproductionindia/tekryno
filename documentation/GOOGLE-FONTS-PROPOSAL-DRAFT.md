@@ -10,7 +10,7 @@
 
 **Public source repository:** https://github.com/sgproductionindia/tekryno
 
-**Release:** Static Regular TTF (`fonts/Tekryno-Regular.ttf`), editable UFO, original SVG artwork and build helper.
+**Release:** Static Regular TTF (`fonts/ttf/Tekryno-Regular.ttf`), editable UFO, original SVG artwork and build helper.
 
 **Specimen:** https://github.com/sgproductionindia/tekryno/blob/main/documentation/specimen/Tekryno-Type-Specimen.pdf
 

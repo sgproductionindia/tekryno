@@ -7,7 +7,7 @@ Last checked: 2026-11-26
 - Google Fonts Fontspector profile: **109 PASS, 0 FAIL, 10 WARN, 11 INFO, 83 SKIP**.
 - Encoded GF Latin Core coverage: **319/319 required codepoints present**; see `LATIN-CORE-COVERAGE.md`.
 - Final font name: `Tekryno`, style `Regular`, PostScript `Tekryno-Regular`.
-- Fonts: `fonts/Tekryno-Regular.ttf` and `fonts/Tekryno-Regular.otf`.
+- Fonts: `fonts/ttf/Tekryno-Regular.ttf` and `fonts/otf/Tekryno-Regular.otf`.
 - Source: editable UFO and original Illustrator SVG artwork are committed.
 
 ## Warnings requiring design-aware review
