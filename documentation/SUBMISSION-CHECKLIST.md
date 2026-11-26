@@ -13,7 +13,7 @@
 
 - [x] Publish canonical `fonts/ttf/Tekryno-Regular.ttf` and desktop OTF.
 - [x] Publish editable UFO, original Illustrator SVG artwork and documented build helper.
-- [ ] Reconcile dotted-circle outline and GPOS differences in UFO rebuild.
+- [x] Reconcile dotted-circle outline and GPOS differences. GitHub source-build verification reproduces TTF byte-for-byte (2026-11-26).
 - [x] Publish five-page specimen and descriptive documentation.
 
 ## Google Fonts technical QA
@@ -21,7 +21,7 @@
 - [x] Verify canonical filename and internal family name (`Tekryno`).
 - [x] Check encoded GF Latin Core coverage (**319/319**).
 - [x] Execute current Fontspector Google Fonts profile (**0 FAIL**, 10 WARN).
-- [ ] Complete manual review of all 10 Fontspector WARNs.
+- [ ] Complete manual design-aware review of all 10 Fontspector WARNs (0 FAIL; caution that warnings are not automatic defects).
 - [ ] Complete small-size/readability, kerning and diacritic composition proofing.
 - [x] Confirm OFL copyright strings and URL in binary font metadata.
 
