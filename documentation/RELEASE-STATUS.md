@@ -23,7 +23,7 @@ The initial automatic ZIP extraction failed because the importer incorrectly tre
 
 1. Reconcile one dotted-circle UFO rebuild outline and compiled GPOS differences.
 2. Complete manual warning, diacritics and readability proofing.
-3. Check legal font-name availability and author signs Google CLA.
+3. Check font-name availability. The original designer reported submitting the Google CLA on 2026-11-26 (not independently verified).
 4. Submit through Google's new-font intake and undergo independent review.
 
 **Google Fonts submission status: NOT SUBMITTED. Google Fonts acceptance: NOT GRANTED.**
