@@ -5,6 +5,8 @@ on:
     paths:
       - sources/**
       - requirements.txt
+      - requirements.in
+      - Makefile
       - .github/workflows/verify-source-build.yml
   workflow_dispatch:
 
@@ -20,7 +22,7 @@ jobs:
         run: python3 -m pip install -r requirements.txt
       - name: Build font from editable UFO and verify original release
         run: |
-          bash sources/build.sh
+          make verify
           python3 - <<'PY'
           from pathlib import Path
           from fontTools.ttLib import TTFont
@@ -45,7 +47,7 @@ jobs:
           **Result: PASS.** The checked-in editable UFO and OpenType feature source rebuild the approved TrueType binary **byte-for-byte** with pinned `fonttools=={fontTools.__version__}`.
 
           - Release: `fonts/ttf/Tekryno-Regular.ttf`
-          - Build command: `bash sources/build.sh`
+          - Build command: `make verify`
           - Built output: `build/Tekryno-Regular.ttf`
           - SHA-256 (both): `{hashlib.sha256(compiled).hexdigest()}`
           - Glyph count: 218; Unicode mappings: 327
