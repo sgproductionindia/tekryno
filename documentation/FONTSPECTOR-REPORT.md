@@ -36,14 +36,14 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/4097 and http
 
 - ⚠️ **WARN** /home/runner/work/_temp/tekryno/Tekryno-Regular.ttf: The following codepoints supported by the font are not covered by any subsets defined in the font's metadata file, and will never be served. You can solve this by either manually adding additional subset declarations to METADATA.pb, or by editing the glyphset definitions.
 
-* U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
-* U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
-* U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
-* U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, tifinagh, math, coptic
-* U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic
-* U+0307 COMBINING DOT ABOVE: try adding one of: old-permic, coptic, tai-le, math, canadian-aboriginal, duployan, hebrew, malayalam, syriac, tifinagh, todhri
+* U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
+* U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
+* U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
+* U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, math, tifinagh, cherokee
+* U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+* U+0307 COMBINING DOT ABOVE: try adding one of: duployan, hebrew, math, syriac, malayalam, canadian-aboriginal, coptic, tai-le, tifinagh, old-permic, todhri
 * U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan
-* U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+* U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage
 * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
 ... and 6 others
 
@@ -171,6 +171,18 @@ Original proposal: [https://github.com/googlefonts/fontbakery/issues/4147]
 
 | Message                                                           | Languages                    |
 |-------------------------------------------------------------------|------------------------------|
+| Auxiliary orthography codepoints:                                 | * en_Latn (English)          |
+|   The following auxiliary characters are missing from the font: Ĕ |                              |
+|   The following auxiliary characters are missing from the font: Ĭ |                              |
+|   The following auxiliary characters are missing from the font: Ŏ |                              |
+|   The following auxiliary characters are missing from the font: Ō |                              |
+|   The following auxiliary characters are missing from the font: Ŭ |                              |
+|   The following auxiliary characters are missing from the font: ĕ |                              |
+|   The following auxiliary characters are missing from the font: ĭ |                              |
+|   The following auxiliary characters are missing from the font: ŏ |                              |
+|   The following auxiliary characters are missing from the font: ō |                              |
+|   The following auxiliary characters are missing from the font: ŭ |                              |
+|   The following auxiliary characters are missing from the font: ʻ |                              |
 | Auxiliary orthography codepoints:                                 | * cs_Latn (Czech)            |
 |   The following auxiliary characters are missing from the font: Ĕ | * cy_Latn (Welsh)            |
 |   The following auxiliary characters are missing from the font: Ĭ | * es_Latn (Spanish)          |
@@ -182,18 +194,6 @@ Original proposal: [https://github.com/googlefonts/fontbakery/issues/4147]
 |   The following auxiliary characters are missing from the font: ŏ |                              |
 |   The following auxiliary characters are missing from the font: ō |                              |
 |   The following auxiliary characters are missing from the font: ŭ |                              |
-| Auxiliary orthography codepoints:                                 | * lv_Latn (Latvian)          |
-|   The following auxiliary characters are missing from the font: Ō |                              |
-|   The following auxiliary characters are missing from the font: Ŗ |                              |
-|   The following auxiliary characters are missing from the font: ō |                              |
-|   The following auxiliary characters are missing from the font: ŗ |                              |
-| Auxiliary orthography codepoints:                                 | * lt_Latn (Lithuanian)       |
-|   The following auxiliary characters are missing from the font: Ẽ |                              |
-|   The following auxiliary characters are missing from the font: Ĩ |                              |
-|   The following auxiliary characters are missing from the font: Ũ |                              |
-|   The following auxiliary characters are missing from the font: ẽ |                              |
-|   The following auxiliary characters are missing from the font: ĩ |                              |
-|   The following auxiliary characters are missing from the font: ũ |                              |
 | Auxiliary orthography codepoints:                                 | * de_Latn (German)           |
 |   The following auxiliary characters are missing from the font: Ĕ |                              |
 |   The following auxiliary characters are missing from the font: Ĭ |                              |
@@ -206,9 +206,33 @@ Original proposal: [https://github.com/googlefonts/fontbakery/issues/4147]
 |   The following auxiliary characters are missing from the font: ō |                              |
 |   The following auxiliary characters are missing from the font: ſ |                              |
 |   The following auxiliary characters are missing from the font: ŭ |                              |
+| Auxiliary orthography codepoints:                                 | * nb_Latn (Norwegian Bokmål) |
+|   The following auxiliary characters are missing from the font: Ǎ |                              |
+|   The following auxiliary characters are missing from the font: Ŋ |                              |
+|   The following auxiliary characters are missing from the font: Ŧ |                              |
+|   The following auxiliary characters are missing from the font: ǎ |                              |
+|   The following auxiliary characters are missing from the font: ŋ |                              |
+|   The following auxiliary characters are missing from the font: ŧ |                              |
+| Auxiliary orthography codepoints:                                 | * fr_Latn (French)           |
+|   The following auxiliary characters are missing from the font: Ǔ |                              |
+|   The following auxiliary characters are missing from the font: ſ |                              |
+|   The following auxiliary characters are missing from the font: ǔ |                              |
 | Auxiliary orthography codepoints:                                 | * da_Latn (Danish)           |
 |   The following auxiliary characters are missing from the font: Ǿ |                              |
 |   The following auxiliary characters are missing from the font: ǿ |                              |
+| Auxiliary orthography codepoints:                                 | * lt_Latn (Lithuanian)       |
+|   The following auxiliary characters are missing from the font: Ẽ |                              |
+|   The following auxiliary characters are missing from the font: Ĩ |                              |
+|   The following auxiliary characters are missing from the font: Ũ |                              |
+|   The following auxiliary characters are missing from the font: ẽ |                              |
+|   The following auxiliary characters are missing from the font: ĩ |                              |
+|   The following auxiliary characters are missing from the font: ũ |                              |
+| Auxiliary orthography codepoints:                                 | * ro_Latn (Romanian)         |
+|   The following auxiliary characters are missing from the font: Ţ |                              |
+|   The following auxiliary characters are missing from the font: ţ |                              |
+| Auxiliary orthography codepoints:                                 | * nl_Latn (Dutch)            |
+|   The following auxiliary characters are missing from the font: Ĳ |                              |
+|   The following auxiliary characters are missing from the font: ĳ |                              |
 | Auxiliary orthography codepoints:                                 | * fi_Latn (Finnish)          |
 |   The following auxiliary characters are missing from the font: Ǧ |                              |
 |   The following auxiliary characters are missing from the font: Ǥ |                              |
@@ -230,35 +254,11 @@ Original proposal: [https://github.com/googlefonts/fontbakery/issues/4147]
 |   The following auxiliary characters are missing from the font: ŧ |                              |
 |   The following auxiliary characters are missing from the font: ʒ |                              |
 |   The following auxiliary characters are missing from the font: ǯ |                              |
-| Auxiliary orthography codepoints:                                 | * nb_Latn (Norwegian Bokmål) |
-|   The following auxiliary characters are missing from the font: Ǎ |                              |
-|   The following auxiliary characters are missing from the font: Ŋ |                              |
-|   The following auxiliary characters are missing from the font: Ŧ |                              |
-|   The following auxiliary characters are missing from the font: ǎ |                              |
-|   The following auxiliary characters are missing from the font: ŋ |                              |
-|   The following auxiliary characters are missing from the font: ŧ |                              |
-| Auxiliary orthography codepoints:                                 | * en_Latn (English)          |
-|   The following auxiliary characters are missing from the font: Ĕ |                              |
-|   The following auxiliary characters are missing from the font: Ĭ |                              |
-|   The following auxiliary characters are missing from the font: Ŏ |                              |
+| Auxiliary orthography codepoints:                                 | * lv_Latn (Latvian)          |
 |   The following auxiliary characters are missing from the font: Ō |                              |
-|   The following auxiliary characters are missing from the font: Ŭ |                              |
-|   The following auxiliary characters are missing from the font: ĕ |                              |
-|   The following auxiliary characters are missing from the font: ĭ |                              |
-|   The following auxiliary characters are missing from the font: ŏ |                              |
+|   The following auxiliary characters are missing from the font: Ŗ |                              |
 |   The following auxiliary characters are missing from the font: ō |                              |
-|   The following auxiliary characters are missing from the font: ŭ |                              |
-|   The following auxiliary characters are missing from the font: ʻ |                              |
-| Auxiliary orthography codepoints:                                 | * nl_Latn (Dutch)            |
-|   The following auxiliary characters are missing from the font: Ĳ |                              |
-|   The following auxiliary characters are missing from the font: ĳ |                              |
-| Auxiliary orthography codepoints:                                 | * ro_Latn (Romanian)         |
-|   The following auxiliary characters are missing from the font: Ţ |                              |
-|   The following auxiliary characters are missing from the font: ţ |                              |
-| Auxiliary orthography codepoints:                                 | * fr_Latn (French)           |
-|   The following auxiliary characters are missing from the font: Ǔ |                              |
-|   The following auxiliary characters are missing from the font: ſ |                              |
-|   The following auxiliary characters are missing from the font: ǔ |                              |
+|   The following auxiliary characters are missing from the font: ŗ |                              |
 | Auxiliary orthography codepoints:                                 | * ca_Latn (Catalan)          |
 |   The following auxiliary characters are missing from the font: Ĕ |                              |
 |   The following auxiliary characters are missing from the font: Ĭ |                              |
