@@ -25,6 +25,6 @@ The 10 WARN instances above are grouped into seven distinct check categories. Fu
 
 ## Additional source and release tasks
 
-- One dotted-circle `uni25CC` outline and some compiled GPOS bytes differ between the current editable UFO rebuild and approved release TTF. This is a source reproducibility task, **not** a Fontspector failure.
+- **Resolved:** Corrected UFO dotted-circle alignment and unified mark feature generation; a pinned build now matches the approved TTF byte-for-byte. See `SOURCE-REPRODUCIBILITY.md`.
 - Confirm licensing attribution, Google Fonts Contributor License Agreement and final name review.
 - Obtain independent font design assessment; passing technical checks does not guarantee Google Fonts curation acceptance.
