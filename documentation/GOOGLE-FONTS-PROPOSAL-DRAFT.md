@@ -22,7 +22,7 @@
 https://github.com/sgproductionindia/tekryno/blob/main/documentation/FONTSPECTOR-REPORT.md
 
 **Pending before final submission:**
-- Original designer signs or confirms Google Contributor License Agreement: https://cla.developers.google.com
+- Original designer reports having submitted the Google Contributor License Agreement (2026-11-26); Google-side processing not independently verified: https://cla.developers.google.com
 - Verify latest source rebuild sufficiently reproduces approved release font; resolve the dotted-circle and compiled GPOS differences.
 - Review warnings and target language quality; confirm font name availability.
 - Submit through the Google Fonts *Submit an OFL Font* issue workflow:
