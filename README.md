@@ -28,6 +28,18 @@
 
 The font is licensed under **SIL Open Font License 1.1, with no Reserved Font Name**. Copyright 2026 The Tekryno Project Authors (https://github.com/sgproductionindia/tekryno). The original designer is Shrawan Gaikwad. The entire family is open source, not just the Regular style.
 
+## Build from editable sources
+
+Install Python 3, then run these commands at the repository root:
+
+```bash
+python3 -m pip install -r requirements.txt
+make build
+make verify
+```
+
+`make build` compiles the editable UFO and `sources/features.fea` into `build/Tekryno-Regular.ttf`. `make verify` checks the result against the approved binary, including byte-for-byte identity. Dependency versions are pinned in `requirements.txt`; see [build instructions](documentation/BUILD-INSTRUCTIONS.md) and the [independent GitHub Actions verification](documentation/SOURCE-REPRODUCIBILITY.md).
+
 ## Google Fonts review
 
 The official Fontspector Google Fonts profile was executed on the TTF in a correctly named `tekryno` directory on 2026-11-26:
