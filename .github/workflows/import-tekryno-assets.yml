@@ -4,7 +4,6 @@ on:
   push:
     paths:
       - TEKRYNO-Google-Fonts-GitHub-Ready-Draft.zip
-      - .github/workflows/import-tekryno-assets.yml
   workflow_dispatch:
 
 permissions:
