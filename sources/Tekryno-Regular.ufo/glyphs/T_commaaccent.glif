@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Tcommaaccent" format="2">
+  <advance width="844"/>
+  <unicode hex="021A"/>
+  <unicode hex="021B"/>
+  <outline>
+    <contour>
+      <point x="72" y="700" type="line"/>
+      <point x="772" y="700" type="line"/>
+      <point x="772" y="562" type="line"/>
+      <point x="491" y="562" type="line"/>
+      <point x="491" y="0" type="line"/>
+      <point x="353" y="0" type="line"/>
+      <point x="353" y="423" type="line"/>
+      <point x="491" y="562" type="line"/>
+      <point x="72" y="562" type="line"/>
+    </contour>
+    <contour>
+      <point x="283" y="-165" type="line"/>
+      <point x="422" y="-27" type="line"/>
+      <point x="491" y="-27" type="line"/>
+      <point x="491" y="-165" type="line"/>
+    </contour>
+  </outline>
+</glyph>

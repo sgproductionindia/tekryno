@@ -1,0 +1,41 @@
+{
+  "ttf": {
+    "glyphs": 218,
+    "codepoints": 327,
+    "family": "Tekryno",
+    "postscript": "Tekryno-Regular",
+    "copyright": "Copyright 2026 The Tekryno Project Authors (https://github.com/sgproductionindia/tekryno)",
+    "weight": 400,
+    "has_kern_gpos": true,
+    "has_meta": true,
+    "has_stat": true,
+    "has_gasp": true,
+    "file_bytes": 20496
+  },
+  "otf": {
+    "glyphs": 218,
+    "codepoints": 327,
+    "family": "Tekryno",
+    "postscript": "Tekryno-Regular",
+    "copyright": "Copyright 2026 The Tekryno Project Authors (https://github.com/sgproductionindia/tekryno)",
+    "weight": 400,
+    "has_kern_gpos": true,
+    "has_meta": true,
+    "has_stat": true,
+    "has_gasp": false,
+    "file_bytes": 17620
+  },
+  "ufo": {
+    "glyphs": 218,
+    "fea_kerning_pairs": 236,
+    "unicode_mappings": 327,
+    "svgs": 162
+  },
+  "ufo_rebuild": {
+    "result": "PASS",
+    "identical_outline_instructions": 218,
+    "preserved_cmap_codepoints": 327,
+    "preserved_horizontal_metrics": true,
+    "preserved_kerning_pairs": 236
+  }
+}

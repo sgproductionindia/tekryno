@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Rcaron" format="2">
+  <advance width="881"/>
+  <unicode hex="0158"/>
+  <unicode hex="0159"/>
+  <outline>
+    <contour>
+      <point x="809" y="227" type="line"/>
+      <point x="809" y="0" type="line"/>
+      <point x="670" y="0" type="line"/>
+      <point x="670" y="227" type="line"/>
+      <point x="210" y="227" type="line"/>
+      <point x="349" y="366" type="line"/>
+      <point x="670" y="366" type="line"/>
+      <point x="670" y="562" type="line"/>
+      <point x="210" y="562" type="line"/>
+      <point x="210" y="227" type="line"/>
+      <point x="210" y="0" type="line"/>
+      <point x="72" y="0" type="line"/>
+      <point x="72" y="700" type="line"/>
+      <point x="670" y="700" type="line"/>
+      <point x="809" y="562" type="line"/>
+      <point x="809" y="366" type="line"/>
+      <point x="740" y="296" type="line"/>
+    </contour>
+    <contour>
+      <point x="606" y="977" type="line"/>
+      <point x="440" y="812" type="line"/>
+      <point x="276" y="977" type="line"/>
+      <point x="386" y="977" type="line"/>
+      <point x="440" y="922" type="line"/>
+      <point x="496" y="977" type="line"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="braceleft" format="2">
+  <advance width="454"/>
+  <unicode hex="007B"/>
+  <outline>
+    <contour>
+      <point x="183" y="765" type="line"/>
+      <point x="251" y="765" type="line"/>
+      <point x="300" y="765" type="line"/>
+      <point x="320" y="765" type="line"/>
+      <point x="389" y="765" type="line"/>
+      <point x="389" y="647" type="line"/>
+      <point x="320" y="647" type="line"/>
+      <point x="300" y="647" type="line"/>
+      <point x="300" y="332" type="line"/>
+      <point x="300" y="133" type="line"/>
+      <point x="300" y="53" type="line"/>
+      <point x="320" y="53" type="line"/>
+      <point x="389" y="53" type="line"/>
+      <point x="389" y="-65" type="line"/>
+      <point x="320" y="-65" type="line"/>
+      <point x="251" y="-65" type="line"/>
+      <point x="183" y="-65" type="line"/>
+      <point x="183" y="53" type="line"/>
+      <point x="183" y="133" type="line"/>
+      <point x="183" y="332" type="line"/>
+      <point x="183" y="647" type="line"/>
+    </contour>
+    <contour>
+      <point x="183" y="468" type="line"/>
+      <point x="183" y="350" type="line"/>
+      <point x="183" y="232" type="line"/>
+      <point x="65" y="232" type="line"/>
+      <point x="65" y="350" type="line"/>
+      <point x="65" y="468" type="line"/>
+    </contour>
+  </outline>
+</glyph>

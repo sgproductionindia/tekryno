@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Gcedilla" format="2">
+  <advance width="909"/>
+  <unicode hex="0122"/>
+  <unicode hex="0123"/>
+  <outline>
+    <contour>
+      <point x="768" y="-27" type="line"/>
+      <point x="837" y="-27" type="line"/>
+      <point x="837" y="-27"/>
+      <point x="837" y="-55"/>
+      <point x="837" y="-96"/>
+      <point x="837" y="-137"/>
+      <point x="837" y="-165"/>
+      <point x="837" y="-165" type="qcurve"/>
+      <point x="630" y="-165" type="line"/>
+    </contour>
+    <contour>
+      <point x="699" y="438" type="line"/>
+      <point x="837" y="300" type="line"/>
+      <point x="837" y="138" type="line"/>
+      <point x="699" y="0" type="line"/>
+      <point x="210" y="0" type="line"/>
+      <point x="72" y="138" type="line"/>
+      <point x="72" y="562" type="line"/>
+      <point x="210" y="700" type="line"/>
+      <point x="699" y="700" type="line"/>
+      <point x="837" y="562" type="line"/>
+      <point x="210" y="562" type="line"/>
+      <point x="210" y="138" type="line"/>
+      <point x="699" y="138" type="line"/>
+    </contour>
+    <contour>
+      <point x="560" y="300" type="line"/>
+      <point x="349" y="300" type="line"/>
+      <point x="487" y="438" type="line"/>
+      <point x="699" y="438" type="line"/>
+    </contour>
+  </outline>
+</glyph>

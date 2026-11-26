@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Cacute" format="2">
+  <advance width="844"/>
+  <unicode hex="0106"/>
+  <unicode hex="0107"/>
+  <outline>
+    <contour>
+      <point x="210" y="562" type="line"/>
+      <point x="210" y="138" type="line"/>
+      <point x="772" y="138" type="line"/>
+      <point x="634" y="0" type="line"/>
+      <point x="210" y="0" type="line"/>
+      <point x="72" y="138" type="line"/>
+      <point x="72" y="562" type="line"/>
+      <point x="210" y="700" type="line"/>
+      <point x="634" y="700" type="line"/>
+      <point x="772" y="562" type="line"/>
+    </contour>
+    <contour>
+      <point x="491" y="907" type="line"/>
+      <point x="353" y="769" type="line"/>
+      <point x="353" y="907" type="line"/>
+      <point x="353" y="977" type="line"/>
+      <point x="491" y="977" type="line"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ogonekcomb" format="2">
+  <unicode hex="0328"/>
+  <outline>
+    <contour>
+      <point x="45" y="-45" type="line"/>
+      <point x="-45" y="-135" type="line"/>
+      <point x="-45" y="0" type="line"/>
+      <point x="45" y="0" type="line"/>
+    </contour>
+  </outline>
+</glyph>

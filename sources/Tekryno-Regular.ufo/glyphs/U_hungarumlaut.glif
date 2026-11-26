@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Uhungarumlaut" format="2">
+  <advance width="908"/>
+  <unicode hex="0170"/>
+  <unicode hex="0171"/>
+  <outline>
+    <contour>
+      <point x="210" y="138" type="line"/>
+      <point x="698" y="138" type="line"/>
+      <point x="559" y="0" type="line"/>
+      <point x="210" y="0" type="line"/>
+      <point x="72" y="138" type="line"/>
+      <point x="72" y="589" type="line"/>
+      <point x="72" y="700" type="line"/>
+      <point x="210" y="700" type="line"/>
+      <point x="210" y="249" type="line"/>
+    </contour>
+    <contour>
+      <point x="698" y="700" type="line"/>
+      <point x="836" y="700" type="line"/>
+      <point x="836" y="138" type="line"/>
+      <point x="836" y="0" type="line"/>
+      <point x="698" y="0" type="line"/>
+      <point x="698" y="138" type="line"/>
+      <point x="698" y="562" type="line"/>
+    </contour>
+    <contour>
+      <point x="627" y="977" type="line"/>
+      <point x="627" y="907" type="line"/>
+      <point x="489" y="769" type="line"/>
+      <point x="489" y="907" type="line"/>
+      <point x="489" y="977" type="line"/>
+    </contour>
+    <contour>
+      <point x="420" y="977" type="line"/>
+      <point x="420" y="907" type="line"/>
+      <point x="281" y="769" type="line"/>
+      <point x="281" y="907" type="line"/>
+      <point x="281" y="977" type="line"/>
+    </contour>
+  </outline>
+</glyph>
