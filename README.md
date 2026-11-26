@@ -4,7 +4,7 @@
 
 ![Tekryno type specimen](documentation/specimen/Tekryno-Overview.jpg)
 
-**Status:** Public OFL-1.1 release candidate and editable source repository. **Tekryno has not yet been submitted to or accepted by Google Fonts.**
+**Status:** Public OFL-1.1 release candidate and editable source repository. [Google Fonts submission #11520](https://github.com/google/fonts/issues/11520) is open and awaiting independent review. **Not yet accepted or published.**
 
 ## Font family
 
@@ -37,11 +37,12 @@ The official Fontspector Google Fonts profile was executed on the TTF in a corre
 - [Full Fontspector report](documentation/FONTSPECTOR-REPORT.md)
 - [Design-aware warning review](documentation/QA-REVIEW.md)
 - [Official Latin Core coverage check](documentation/LATIN-CORE-COVERAGE.md)
-- [Source provenance and rebuild caveat](documentation/PROVENANCE.md)
+- [Verified, reproducible source build](documentation/SOURCE-REPRODUCIBILITY.md)
+- [Source provenance](documentation/PROVENANCE.md)
 - [Current submission checklist](documentation/SUBMISSION-CHECKLIST.md)
-- [Draft proposal for Google Fonts](documentation/GOOGLE-FONTS-PROPOSAL-DRAFT.md)
+- [Official Google Fonts proposal #11520](https://github.com/google/fonts/issues/11520)
 
-**Source reproducibility caveat:** The latest UFO development build retains the approved TTF's glyph count, Unicode mappings and metrics, but one dotted-circle outline and compiled GPOS bytes differ. The approved release binary remains the visual reference while these differences are reviewed.
+**Source reproducibility: VERIFIED.** On 26 November 2026, GitHub Actions rebuilt the approved 20,496-byte TTF byte-for-byte from the editable UFO and OpenType feature source with pinned fontTools 4.63.0. Original outlines, metrics, kerning and mark positioning are unchanged.
 
 Google Fonts publication is subject to independent design review, source and engineering validation, and the author's Contributor License Agreement. Technical checks passing does **not** imply acceptance.
 
