@@ -1,0 +1,72 @@
+name: Import approved Tekryno project assets
+
+on:
+  push:
+    paths:
+      - TEKRYNO-Google-Fonts-GitHub-Ready-Draft.zip
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import-assets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Extract release assets and preserve current licensing files
+        run: |
+          python3 - <<'PY'
+          import zipfile
+          from pathlib import Path
+          archive = Path("TEKRYNO-Google-Fonts-GitHub-Ready-Draft.zip")
+          if not archive.is_file():
+              raise SystemExit(f"Missing upload: {archive}")
+          allowed = ("fonts/", "sources/", "documentation/specimen/")
+          extras = {"documentation/LOCAL-QA.json", "documentation/unicode-mappings-development.csv"}
+          required = {"fonts/Tekryno-Regular.ttf", "fonts/Tekryno-Regular.otf",
+                      "sources/build_from_ufo.py",
+                      "documentation/specimen/Tekryno-Type-Specimen.pdf"}
+          extracted = set()
+          with zipfile.ZipFile(archive) as package:
+              entries = package.namelist()
+              normalized = {x.removeprefix("tekryno/") for x in entries}
+              missing = required - normalized
+              if missing:
+                  raise SystemExit(f"Archive is missing required files: {sorted(missing)}")
+              for item in package.infolist():
+                  if item.is_dir():
+                      continue
+                  full = item.filename
+                  if not full.startswith("tekryno/"):
+                      continue
+                  rel = full.removeprefix("tekryno/")
+                  parts = Path(rel).parts
+                  if not parts or "." in parts or ".." in parts:
+                      raise SystemExit(f"Unsafe ZIP entry: {full}")
+                  if not (rel.startswith(allowed) or rel in extras):
+                      continue
+                  if "/__pycache__/" in rel or rel.endswith(".pyc"):
+                      continue
+                  target = Path(rel)
+                  target.parent.mkdir(parents=True, exist_ok=True)
+                  target.write_bytes(package.read(item))
+                  extracted.add(rel)
+          if not required.issubset(extracted):
+              raise SystemExit("Not all required release assets were extracted")
+          print(f"Extracted {len(extracted)} release assets")
+          PY
+      - name: Commit font, source and specimen assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add fonts sources documentation/specimen documentation/LOCAL-QA.json documentation/unicode-mappings-development.csv
+          git rm --ignore-unmatch TEKRYNO-Google-Fonts-GitHub-Ready-Draft.zip
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish Tekryno release-candidate fonts, editable sources and specimen"
+            git push
+          else
+            echo "No changes to publish"
+          fi
